@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html data-theme="black" class="scroll-smooth" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Viskashion - Viska Fashion</title>
+
+    <!-- fonts google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+    <!-- css tailwind -->
+    <link href="./dist/output.css" rel="stylesheet" />
+
+    <!-- AOS -->
+    <link rel="stylesheet" href="./dist/aos.css" />
+
+    <!-- css -->
+    <style>
+      body {
+        font-family: "Manrope";
+        margin: 0;
+        padding: 0;
+      }
+
+      /* width */
+      ::-webkit-scrollbar {
+        width: 5px;
+      }
+
+      /* Track */
+      ::-webkit-scrollbar-track {
+        border-radius: 10px;
+      }
+
+      /* Handle */
+      ::-webkit-scrollbar-thumb {
+        background: rgb(82, 82, 82);
+        border-radius: 10px;
+        transition: 0.5s all;
+      }
+
+      /* Handle on hover */
+      ::-webkit-scrollbar-thumb:hover {
+        background: rgb(94, 94, 94);
+      }
+
+      
+      .background-img {
+        background-image: url(./assets/bg.jpg);
+        object-fit: cover;
+        background-position: center;
+        background-size: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- navbar -->
+    <div id="nav" class="navbar transition-all z-50 backdrop-blur-xl border-gray-500 lg:px-8 fixed">
+      <div class="navbar-start">
+        <div class="dropdown">
+          <label tabindex="0" class="btn btn-ghost lg:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+          </label>
+          <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-300 rounded-box w-52">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#collection">Collection</a></li>
+            <li><a href="#benefits">Benefits</a></li>
+            <li><a href="#testimoni">Testimoni</a></li>
+          </ul>
+        </div>
+        <a href="./index.html" class="lg:ml-0 ml-2 font-bold bg-gradient-to-r from-gray-100 to-gray-300 font-mediumm bg-clip-text text-transparent text-3xl lg:text-4xl">Viskashion</a>
+      </div>
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal p-0">
+          <a href="#home" class="mx-5 hover:underline transition-all">Home</a>
+          <a href="#about" class="mx-5 hover:underline transition-all">About Us</a>
+          <a href="#collection" class="mx-5 hover:underline transition-all">Collection</a>
+          <a href="#benefits" class="mx-5 hover:underline transition-all">Benefits</a>
+          <a href="#testimoni" class="mx-5 hover:underline transition-all">Testimoni</a>
+        </ul>
+      </div>
+      <div class="navbar-end">
+        <a class="btn btn-primary">Login</a>
+      </div>
+    </div>
+    <!-- navbar -->
+
+    <!-- hero -->
+    <div class="lg:w-[80%] w-[90%] mx-auto" id="home">
+      <div class="grid lg:grid-cols-2 grid-cols-1 lg:h-screen h-full items-center pt-28 lg:pt-0">
+        <div class="">
+          <!-- <span class="w-5 h-[1px] bg-primary text-xs">-</span> -->
+          <hr class="h-[5px] w-28 mb-2 bg-black" data-aos="fade-up" data-aos-duration="500" />
+          <h1 class="text-5xl font-semibold" data-aos="fade-up" data-aos-delay="50" data-aos-duration="500">
+            Viskashion, <br />
+            <span class="font-light text-4xl">Dimana Kita Berani Tampil Beda.</span>
+          </h1>
+          <p data-aos="fade-up" data-aos-delay="100" data-aos-duration="500" class="mt-5">Dapatkan produk fashion berkualitas, kembangkan penampilanmu, jadilah beda jadilah percaya diri.</p>
+          <a href="#about" class="mt-5 btn btn-outline transition-all" data-aos="fade-up" data-aos-delay="150" data-aos-duration="500">Get Started</a>
+        </div>
+        <div class="lg:justify-self-end justify-self-center lg:w-4/5 mt-10 lg:mt-0" data-aos="fade-up" data-aos-delay="200" data-aos-duration="500">
+          <img data-tilt data-tilt-glare data-tilt-max-glare="1" src="./assets/hero.png" alt="" />
+        </div>
+      </div>
+    </div>
+    <!-- hero -->
+
+    <!-- about us -->
+    <div class="bg-base-300">
+      <div class="lg:w-[80%] w-[90%] lg:py-0 py-28 mx-auto" id="about">
+        <div class="grid lg:grid-cols-2 grid-cols-1 lg:h-screen h-full items-center">
+          <div class="lg:justify-self-start justify-self-center lg:w-4/5 mt-10 lg:mt-0 lg:order-1 order-2" data-aos="fade-up" data-aos-delay="50">
+            <img data-tilt data-tilt-glare data-tilt-max-glare="1" src="./assets/about.png" alt="" />
+          </div>
+          <div class="lg:order-2 order-1">
+            <h1 class="bg-primary px-4 py-2 w-52 text-2xl text-center text-white" data-aos="fade-up" data-aos-delay="100">Tentang Kami</h1>
+            <h1 class="lg:text-5xl text-4xl mt-5" data-aos="fade-up" data-aos-delay="100">Saatnya untuk Percaya Diri, dan Berani Tampil Beda.</h1>
+            <p class="mt-5 lg:text-sm text-base" data-aos="fade-up" data-aos-delay="150">Viskashion atau lebih diperjelas menjadi Viska Fashion adalah e-commerce fashion yang ditujukan untuk siswa SMK Negeri 6 Surakarta agar mereka dapat membeli produk fashion berkualitas.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- about us -->
+
+    <!-- collection -->
+    <div class="w-[95%] lg:pt-20 py-28 mx-auto" id="collection">
+      <div class="grid grid-cols-1 justify-items-center">
+        <h1 class="bg-primary px-4 py-2 w-36 text-2xl text-center text-white" data-aos="fade-up">Collection</h1>
+        <h1 class="lg:text-5xl text-4xl mt-5 text-center" data-aos="fade-up" data-aos-delay="50">Best Selling Collection</h1>
+        <p class="mt-5 text-center" data-aos="fade-up" data-aos-delay="100">Berikut adalah collection terpopuler menurut analisis kami.</p>
+      </div>
+
+      <div class="grid lg:grid-cols-4 grid-cols-1 h-full mt-10 gap-x-5 lg:gap-y-0 gap-y-5">
+        <div class="card w-full bg-base-300 shadow-xl" data-aos="fade-right" data-aos-delay="150">
+          <figure><img src="./assets/shirt.jpg" class="w-full h-52 object-cover" alt="" /></figure>
+          <div class="card-body">
+            <h2 class="card-title">
+              Kaos
+              <div class="badge badge-secondary">NEW</div>
+            </h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, sunt!</p>
+            <div class="card-actions justify-end">
+              <button class="btn btn-primary">Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="card w-full bg-base-300 shadow-xl" data-aos="fade-right" data-aos-delay="200">
+          <figure><img src="./assets/bag.jpg" class="w-full h-52 object-cover" alt="" /></figure>
+          <div class="card-body">
+            <h2 class="card-title">
+              Tas
+              <div class="badge badge-secondary">NEW</div>
+            </h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, sunt!</p>
+            <div class="card-actions justify-end">
+              <button class="btn btn-primary">Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="card w-full bg-base-300 shadow-xl" data-aos="fade-right" data-aos-delay="250">
+          <figure><img src="./assets/shoes.jpg" class="w-full h-52 object-cover" alt="" /></figure>
+          <div class="card-body">
+            <h2 class="card-title">
+              Sepatu
+              <div class="badge badge-secondary">NEW</div>
+            </h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, sunt!</p>
+            <div class="card-actions justify-end">
+              <button class="btn btn-primary">Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="card w-full bg-base-300 shadow-xl" data-aos="fade-right" data-aos-delay="300">
+          <figure><img src="./assets/jacket.jpg" class="w-full h-52 object-cover" alt="" /></figure>
+          <div class="card-body">
+            <h2 class="card-title">
+              Jaket
+              <div class="badge badge-secondary">NEW</div>
+            </h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, sunt!</p>
+            <div class="card-actions justify-end">
+              <button class="btn btn-primary">Buy Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- collection -->
+
+    <!-- benefits -->
+    <div class="w-[95%] lg:pt-20 py-28 mx-auto" id="benefits">
+      <div class="grid grid-cols-1 justify-items-center">
+        <h1 class="bg-primary px-4 py-2 w-36 text-2xl text-center text-white" data-aos="fade-up">Benefits</h1>
+        <h1 class="text-4xl mt-5 text-center" data-aos="fade-up" data-aos-delay="50">Why Should Chose Us
+        </h1>
+      </div>
+
+      <div class="grid lg:grid-cols-4 grid-cols-1 h-full mt-10 gap-x-5 gap-y-5">
+        <div class="card w-full bg-base-300 shadow-xl" data-aos="fade-up" data-aos-delay="100">
+          <div class="card-body">
+            <h2 class="text-2xl">Harga Terjangkau</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, accusantium.</p>
+          </div>
+        </div>      
+        <div class="card w-full bg-base-300 shadow-xl" data-aos="fade-up" data-aos-delay="150">
+          <div class="card-body">
+            <h2 class="text-2xl">Produk Lokal</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, accusantium.</p>
+          </div>
+        </div>
+        <div class="card w-full bg-base-300 shadow-xl" data-aos="fade-up" data-aos-delay="200">
+          <div class="card-body">
+            <h2 class="text-2xl">Original Produk</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, accusantium.</p>
+          </div>
+        </div>
+        <div class="card w-full bg-base-300 shadow-xl" data-aos="fade-up" data-aos-delay="250">
+          <div class="card-body">
+            <h2 class="text-2xl">Brand Terpercaya</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, accusantium.</p>
+          </div>
+        </div>
+        <div class="card w-full bg-base-300 shadow-xl" data-aos="fade-up" data-aos-delay="300">
+          <div class="card-body">
+            <h2 class="text-2xl">Karya Anak Bangsa</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, accusantium.</p>
+          </div>
+        </div>
+        <div class="card w-full bg-base-300 shadow-xl" data-aos="fade-up" data-aos-delay="350">
+          <div class="card-body">
+            <h2 class="text-2xl">Produk Kekinian</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, accusantium.</p>
+          </div>
+        </div>
+        <div class="card w-full bg-base-300 shadow-xl" data-aos="fade-up" data-aos-delay="400">
+          <div class="card-body ">
+            <h2 class="text-2xl">Bahan Berkualitas</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, accusantium.</p>
+          </div>
+        </div>
+        <div class="card w-full bg-base-300 shadow-xl" data-aos="fade-up" data-aos-delay="450">
+          <div class="card-body">
+            <h2 class="text-2xl">Online Shop</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, accusantium.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- benefits -->
+
+    <!-- testimoni -->
+    <div class="w-[95%] lg:pt-20 py-28 mx-auto lg:h-screen" id="testimoni">
+      <div class="grid grid-cols-1 justify-items-center ">
+        <h1 class="bg-primary px-4 py-2 w-36 text-2xl text-center text-white" data-aos="fade-up">Testimoni</h1>
+        <h1 class="lg:text-5xl text-4xl mt-5 text-center" data-aos="fade-up" data-aos-delay="50">Apa Kata Mereka?
+        </h1>
+      </div>
+
+      <div class="flex lg:flex-row flex-col justify-between mt-10 lg:gap-x-10 gap-y-5">
+        <div class="card w-full bg-base-300 shadow-xl" data-tilt data-tilt-glare data-tilt-max-glare="0.3">
+          <div class="card-body flex justify-center">
+              <div class="avatar w-full flex justify-center ">
+                <div class="w-20 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
+                  <img src="./assets/t1.jpg" class="object-cover" />
+                </div>
+              </div>
+              <div class="flex flex-col items-center">
+                <h2 class="text-2xl font-bold">Syailendra</h2>
+                <p class="-mt-1">Pelajar</p>
+              </div>
+            <p class="text-normal text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit voluptate, error vitae fuga quis voluptatem.</p>
+          </div>
+        </div>
+        <div class="card w-full bg-base-300 shadow-xl" data-tilt data-tilt-glare data-tilt-max-glare="0.3">
+          <div class="card-body flex justify-center">
+              <div class="avatar w-full flex justify-center ">
+                <div class="w-20 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
+                  <img src="./assets/t2.jpg" class="object-cover" />
+                </div>
+              </div>
+              <div class="flex flex-col items-center">
+                <h2 class="text-2xl font-bold">Aida</h2>
+                <p class="-mt-1">Pelajar</p>
+              </div>
+            <p class="text-normal text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit voluptate, error vitae fuga quis voluptatem.</p>
+          </div>
+        </div>
+        <div class="card w-full bg-base-300 shadow-xl" data-tilt data-tilt-glare data-tilt-max-glare="0.3">
+          <div class="card-body flex justify-center">
+              <div class="avatar w-full flex justify-center ">
+                <div class="w-20 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
+                  <img src="./assets/t4.jpeg" class="object-cover" />
+                </div>
+              </div>
+              <div class="flex flex-col items-center">
+                <h2 class="text-2xl font-bold">Dulloh</h2>
+                <p class="-mt-1">Pelajar</p>
+              </div>
+            <p class="text-normal text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit voluptate, error vitae fuga quis voluptatem.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Testimoni -->
+
+    <!-- ending -->
+    <div class="background-img">
+      <div class="lg:w-[80%] w-[90%] mx-auto">
+        <div class="grid grid-cols-1 h-screen justify-items-center items-center pt-28 lg:pt-0">
+          <div class="grid grid-cols-1 justify-items-center">
+            <!-- <span class="w-5 h-[1px] bg-primary text-xs">-</span> -->
+            <!-- <hr class="h-[5px] w-28 mb-2 bg-black" data-aos="fade-up" data-aos-duration="500" /> -->
+            <h1 class="text-5xl mt-5 text-center" data-aos="fade-up" data-aos-delay="50">Ready to Build Your Appearance?
+            </h1>
+            <a href="#" class="mt-5 btn btn-outline transition-all text-center" data-aos="fade-up" data-aos-delay="150" data-aos-duration="500">Coba Sekarang</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ending -->
+
+    <!-- footer -->
+    <footer class="footer p-10 mt-52 bg-neutral text-base-content">
+      <div>
+        <a href="./index.html" class="lg:ml-0 ml-2 font-bold bg-gradient-to-r from-gray-100 to-gray-300 font-mediumm bg-clip-text text-transparent text-3xl lg:text-4xl">Viskashion</a>
+        <p>Powered by SMK Negeri 6 Surakarta<br>Providing quality fashion products since 2022</p>
+      </div> 
+      <div>
+        <span class="footer-title">Services</span> 
+        <a class="link link-hover">Fashion</a> 
+        <a class="link link-hover">Branding</a> 
+        <a class="link link-hover">Clothing</a> 
+        <a class="link link-hover">Advertisement</a>
+      </div> 
+      <div>
+        <span class="footer-title">Company</span> 
+        <a class="link link-hover">About us</a> 
+        <a class="link link-hover">Contact</a> 
+        <a class="link link-hover">Jobs</a> 
+        <a class="link link-hover">Press kit</a>
+      </div> 
+      <div>
+        <span class="footer-title">Legal</span> 
+        <a class="link link-hover">Terms of use</a> 
+        <a class="link link-hover">Privacy policy</a> 
+        <a class="link link-hover">Cookie policy</a>
+      </div>
+    </footer>
+    <!-- footer -->
+
+    <script type="text/javascript" src="./dist/vanilla-tilt.js"></script>
+    <script src="./dist/aos.js"></script>
+    <script>
+      window.addEventListener("scroll", () => {
+        var header = document.getElementById("nav");
+        header.classList.toggle("bg-base-300/70", window.scrollY > 0);
+        header.classList.toggle("border-b", window.scrollY > 0);
+      });
+
+      AOS.init({
+        once: true,
+      });
+    </script>
+  </body>
+</html>
